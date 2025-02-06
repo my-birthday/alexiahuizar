@@ -12,19 +12,18 @@ window.sr = ScrollReveal();
 
 	sr.reveal('.nombres', {
 		duration: 2000, //tiempo
-		delay:700,
+		delay:2500,
 		origin: 'top', //origen
 		scale: 0.10,
 		distance: '-0' //distancia
 
 
 	}); 
-	sr.reveal('.nombres2', {
+	sr.reveal('.musica', {
 		duration: 2000, //tiempo
-		delay:1000,
-		origin: 'top', //origen
-		scale: 0.10,
-		distance: '-0' //distancia
+		delay:2700,
+		origin: 'bottom', //origen
+		distance: '100px' //distancia
 
 
 	}); 
@@ -106,6 +105,7 @@ window.sr = ScrollReveal();
 
 
 	}); 
+
 			sr.reveal('#cuenta', {
 		duration: 1500, //tiempo
 		//delay:800,
@@ -120,6 +120,14 @@ window.sr = ScrollReveal();
 		origin: 'top', //origen
 		scale: 0.30,
 		distance: '-0' //distancia
+		
+
+	});
+	sr.reveal('.ceremoniaReligiosa2', {
+		duration: 3500, //tiempo
+		delay:1000,
+		origin: 'bottom', //origen
+		distance: '500px' //distancia
 		
 
 	});
@@ -190,6 +198,31 @@ window.sr = ScrollReveal();
 		origin: 'top', //origen
 		scale: 0.10,
 		distance: '-0' //distancia
+
+
+	}); 
+					sr.reveal('.btnWhatsNovios', {
+		duration: 2000, //tiempo
+		delay:2500,
+		origin: 'left', //origen
+
+		distance: '300px' //distancia
+
+
+	}); 
+							sr.reveal('.textoasistencia', {
+		duration: 2000, //tiempo
+		delay:2200,
+		origin: 'bottom', //origen
+		distance: '300px' //distancia
+
+
+	}); 
+									sr.reveal('#icono', {
+		duration: 2000, //tiempo
+		delay:2000,
+		origin: 'top', //origen
+		distance: '100px' //distancia
 
 
 	}); 
@@ -367,7 +400,7 @@ sr.reveal('.textoSeccion3', {
 
 
 	}); 
-sr.reveal('.evitarDress', {
+sr.reveal('.', {
 		duration: 3000, //tiempo
 		delay:700,
 		origin: 'bottom', //origen
@@ -393,9 +426,17 @@ sr.reveal('.evitarDress2', {
 		
 
 	});
-		sr.reveal('#leon', {
+	sr.reveal('.respetuosamente', {
 		duration: 3000, //tiempo
-		delay:900,
+		delay:500,
+		origin: 'left', //origen
+		distance: '150px' //distancia
+		
+
+	});
+		sr.reveal('#leon', {
+		duration: 2500, //tiempo
+		delay:500,
 		origin: 'bottom', //origen
 		distance: '300px' //distancia
 		
@@ -522,12 +563,17 @@ function closeAllSelect(elmnt) {
 const counts = document.querySelectorAll('.numero')
 const speed = 10
 
-counts.forEach((counter) => {
+setTimeout(() => {
+  console.log("1 Segundo esperado")
+
+  counts.forEach((counter) => {
     function upDate(){
         const target = Number(counter.getAttribute('data-target'))
         const count = Number(counter.innerText)
         const inc = target / speed        
         if(count < target){
+
+        	
             counter.innerText = Math.floor(inc + count) 
             setTimeout(upDate, 100)
         }else{
@@ -536,3 +582,8 @@ counts.forEach((counter) => {
     }
     upDate()
 })
+
+
+}, 2000);
+
+

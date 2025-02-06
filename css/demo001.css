@@ -141,16 +141,16 @@ font-family: "Playfair Display", serif;
 @media only screen and (max-width: 380px) and (min-width: 320px)  {
 
 .nombres{
-font-family: "Cormorant Garamond", serif;
-  font-weight: 700;
-  font-style: normal;
+font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  margin-top:50px;
-  margin-bottom: 30px;
-  color:#bc943c;
-  font-size: 55px;
+  margin-top:0px;
+  margin-bottom: 20px;
+  color:#fff;
+  font-size: 32px;
   z-index: 9999;
+  letter-spacing: 4px;
 
 }
 .nombres2{
@@ -179,10 +179,14 @@ font-family: 'Arizonia', cursive;
 
 }
 .nuestraBoda{
- font-family: 'Cormorant Garamond', serif;
-  margin-top:0px;
+ font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin-top:-55px;
   color:#FFF;
-  font-size: 35px;
+  font-size: 55px;
+  letter-spacing: 11px;
 
 }
 .leon{
@@ -214,16 +218,16 @@ z-index: 99px;
 @media (max-width:320px){
 
 .nombres{
-font-family: "Cormorant Garamond", serif;
-  font-weight: 700;
-  font-style: normal;
+font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  margin-top:50px;
-  margin-bottom: 30px;
-  color:#bc943c;
-  font-size: 70px;
+  margin-top:0px;
+  margin-bottom: 20px;
+  color:#fff;
+  font-size: 32px;
   z-index: 9999;
+  letter-spacing: 4px;
 
 }
 .nombres2{
@@ -252,10 +256,14 @@ font-family: 'Arizonia', cursive;
 
 }
 .nuestraBoda{
- font-family: 'Cormorant Garamond', serif;
-  margin-top:0px;
+ font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin-top:-55px;
   color:#FFF;
-  font-size: 35px;
+  font-size: 55px;
+  letter-spacing: 11px;
 }
 .leon{
  font-family: 'Cormorant Garamond', serif;
@@ -695,7 +703,20 @@ font-family: 'Open Sans', sans-serif;
   text-align: center;
   z-index: 9999;
 }
+.ceremoniaReligiosa2{
+   box-shadow: 0 0 20px #bc8b87;
+  border-top: 2px solid #A06B4E;
+  border-bottom: 2px solid #A06B4E;
+  border-right: 2px solid #A06B4E;
+  border-left: 2px solid #A06B4E;
+  border-color: #fff;
 
+  
+  background-image: url(../img/fondo.png);
+  background-size: cover;
+  text-align: center;
+  z-index: 9999;
+}
 .vestimenta{
 
   border-top: 3px solid black;
@@ -1130,7 +1151,7 @@ margin-top: 0px;
     cursor:pointer;
     width:50px;
     height:50px;
-    background-color:#eec2c3;
+    background-color:#bc8b87;
     border-color: white;
     text-indent:-9999px;
     display:none;
@@ -1451,9 +1472,10 @@ margin-bottom:;}
 border-color: #eec2c3;
   box-shadow: 0 0 25px #000;
 
-  border-top-left-radius: 30px 30px;
-border-bottom-left-radius: 50px 50px;
+  border-top-left-radius: 50px 50px;
+
 border-bottom-right-radius: 50px 50px;
+
 margin-top: -100px;
 
 
@@ -1539,3 +1561,46 @@ margin-top: -100px;
 }
 
 
+ @keyframes appear {
+        from {
+          opacity: 0;
+         
+          transform: translatey(200px);
+        }
+        to {
+          opacity: 1;
+          transform: translatey(0px);
+        }
+      }
+
+@keyframes left {
+        from {
+          opacity: 0;
+         
+          transform: translateX(-200px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+      @keyframes top {
+        from {
+          opacity: 0;
+         
+          transform: translatey(-200px);
+        }
+        to {
+          opacity: 1;
+          transform: translatey(0px);
+        }
+      }
+
+      .evitarDress {
+        animation: left linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+     
+    
+    
