@@ -400,7 +400,7 @@ sr.reveal('.textoSeccion3', {
 
 
 	}); 
-sr.reveal('.', {
+sr.reveal('.evitarDress', {
 		duration: 3000, //tiempo
 		delay:700,
 		origin: 'bottom', //origen
