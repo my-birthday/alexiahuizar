@@ -485,7 +485,7 @@ function personas2() {
     window.open("pases/inicio2.html", "_self");        
 }
 function personas3() {
-    window.open("pases/inicio3.html", "_self");        
+    window.open("https://my-birthday.github.io/alexiahuizar/inicio.html", "_self");        
 }
 function personas4() {
     window.open("pases/inicio4.html", "_self");        

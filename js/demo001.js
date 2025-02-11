@@ -409,6 +409,15 @@ sr.reveal('.evitarDress', {
 
 
 	}); 
+sr.reveal('.ticket', {
+		duration: 3000, //tiempo
+		delay:700,
+		origin: 'left', //origen
+		
+		distance: '300px' //distancia
+
+
+	}); 
 sr.reveal('.evitarDress2', {
 		duration: 3000, //tiempo
 		delay:700,
